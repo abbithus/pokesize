@@ -1,11 +1,11 @@
-import PokeAPI, { IPokemon } from "pokeapi-typescript";
+import PokeAPI, { IPokemon } from 'pokeapi-typescript';
 import {
     CombinedAverages,
     PokemonSizeValues,
     PokemonTypes,
     TypeGroupedPokemon,
     TypeGroupedPokemonSizeValues
-} from "../types/types";
+} from '../types/types';
 
 export const BATCH_SIZE = 500;
 
@@ -119,7 +119,7 @@ export class PokeStatsService {
             return {
                 globalAverages: { height: 0, weight: 0 },
                 groupedAverages: { }
-            }
+            };
         }
         const globalAverages = this.getGlobalAverage(pokemonList);
         const groupedAverages = this.getGroupedAverage(pokemonList);

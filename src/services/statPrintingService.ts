@@ -1,11 +1,11 @@
-import { PokemonSizeValues, TypeGroupedPokemon, TypeGroupedPokemonSizeValues } from "../types/types";
+import { PokemonSizeValues, TypeGroupedPokemon, TypeGroupedPokemonSizeValues } from '../types/types';
 
 
 export class StatPrintingService {
     static printStats(stats: PokemonSizeValues, useStandardUnits: boolean): void {
-        const heightDisplay = useStandardUnits ? `${stats.height / 10}m` : `${stats.height}dm`
+        const heightDisplay = useStandardUnits ? `${stats.height / 10}m` : `${stats.height}dm`;
         console.log(`HEIGHT: ${heightDisplay}`);
-        const weightDisplay = useStandardUnits ? `${stats.weight / 10}kg` : `${stats.weight}hg`
+        const weightDisplay = useStandardUnits ? `${stats.weight / 10}kg` : `${stats.weight}hg`;
         console.log(`WEIGHT: ${weightDisplay}`);
     }
 
