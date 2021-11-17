@@ -6,7 +6,7 @@ async function main() {
     program
         .requiredOption('-l, --limit <number>', 'The number of pokemon to fetch (maximum)')
         .requiredOption('-o, --offset <number>', 'The number of pokemon to skip before beginning fetch')
-        .option('-u, --use-standard-units', 'Pass this flag to display units in meters and kilograms, rather than decimeters and decagrams');
+        .option('-u, --use-standard-units', 'Pass this flag to display units in meters and kilograms, rather than decimeters and hectagrams');
 
     program.parse(process.argv);
     const options = program.opts();
