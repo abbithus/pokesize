@@ -21,3 +21,7 @@ While PokeAPI reports weight and height in hectagrams and decimeters respectivel
 ```bash
 npm run start -- --help
 ```
+
+## Testing
+
+Testing (done via Jest) is minimal at the moment, but there are example tests for both of the services. `npm t` (an alias for `npm run test`) will run all tests in all suites and report the results.
